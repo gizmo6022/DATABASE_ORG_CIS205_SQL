@@ -1,0 +1,39 @@
+Publisher,,,,
+pEmail,pName,pAddress,phone,
+"""penguin@penguin.com""","""Penguin""","""11289 E 23rd Street, NY""","""2155551234""",
+"""Accounts@RandomHouse.com""","""Random House""","""3455 Publishers Stree, London, UK""","""2155559876""",
+"""en@HoughtonMifflin.com""","""Houghton Mifflin""","""1985 W 52nd Street NY, NY""","""2155553456""",
+"""books@tinypress.com""","""Tiny Press""","""187 N Broad Street, Philadelphia, PA""","""2155558765""",
+,,,,
+Author,,,,
+aEmail,aName,aAddress,phone,SSN
+"""Andy@aol.com""","""Andy Weir:""","""156 Sunset Blvd, LA, CA""","""3025551234""","""0173943294"""
+"""Rowling@WizzardingWorld.com""","""J.K. Rolling","""3455 CharingCross road, ED, UK""","""3025554567""","""1029334287"""
+"""George@gmail.com""","""Goerge R Martin""","""877 Main Street, Colarado City, CO""","""3025554567""","""1029334287"""
+"""Micheal@gmail.com""","""Micheal Crichton""","""567 Street Road, San Won, CR""","""3025559876""","""5989120354"""
+,,,,
+Books,,,,
+ISBN,title,pYear,aEmail_FK,pEmail_Fk
+9780553418026,"""The Martian""",2012,"""Andy@aol.com""","""penguin@penguin.com"""
+9780590353403,"""Harry Potter""",2001,"""Rowling@WizzardingWorld.com""","""Accounts@RandomHouse.com"""
+9781405072960,"""Jurrasic Park""",2006,"""George@gmail.com""","""en@HoughtonMifflin.com"""
+9780553593716,"""Game Of Thrones""",1998,"""Micheal@gmail.com""","""books@tinypress.com"""
+,,,,
+Contracts,,,,
+contractNum,dollarSum,signDate,aEmail_FK,pEmail_Fk
+"""192746372817""",700000,"""2011/08/15""","""Andy@aol.com""","""penguin@penguin.com"""
+"""234712553478""",120000000,"""1999/09/26""","""Rowling@WizzardingWorld.com""","""Accounts@RandomHouse.com"""
+"""762137123658""",232000,"""2005/09/17""","""George@gmail.com""","""en@HoughtonMifflin.com"""
+"""342321345652""",308000,"""1988/10/02""","""Micheal@gmail.com""","""books@tinypress.com"""
+,,,,
+Marketing_Company,,,,
+mEmail,mName,mAddress,phone,
+"""Accounts@CDP.com""","""Cooper Drapper Price""","""1010 Flourence Circle""","""6105559876""",
+"""Accounts@martinsquared.com""","""Martin And Martin""","""100 Erving Lane""","""6105556789""",
+"""Accounts@wm4u.com""","""We Market 4 U""","""101 Broad Streat""","""6105556754""",
+,,,,
+Markets_For,,,,
+mEmail_FK,pEmail_Fk,,,
+"""Accounts@CDP.com""","""penguin@penguin.com""",,,
+"""Accounts@martinsquared.com""","""Accounts@RandomHouse.com""",,,
+"""Accounts@wm4u.com""","""en@HoughtonMifflin.com""",,,
