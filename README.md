@@ -1,1 +1,1 @@
-Coursework for Database orginization usign SQL
+Coursework for Database orginization using SQL
